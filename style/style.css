@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 10px 15px;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo-word {
+  width: 50px;
+  height: 40px;
+}
+
+.logo-word a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.div-home-image {
+  width: 100%;
+  height: auto;
+}
+
+.div-home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none;
+}
+
+#overlay {
+  background-color: hsla(0, 0%, 0%, 0.744);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#menu-toggle {
+  background-color: white;
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+#menu-toggle .menu {
+  list-style: none;
+  text-decoration: none;
+}
+
+#menu-close {
+  margin: 10px 0px 80px 150px;
+  border: none;
+  background-color: white;
+}
+
+#menu-toggle .menu li {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#menu-toggle .menu a {
+  margin-bottom: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+main h1 {
+  width: 80%;
+  font-weight: 800;
+  line-height: 1;
+  font-size: 2.2rem;
+}
+
+main p:first-child {
+  color: hsla(0, 0%, 0%, 0.5);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+main button {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+aside {
+  background-color: hsl(240, 100%, 5%);
+  padding: 5px 15px;
+}
+
+aside h2 {
+  color: hsl(35, 77%, 62%);
+}
+
+aside h4,
+p {
+  color: hsl(36, 100%, 99%);
+}
+
+aside .ligne {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.content {
+  margin: 50px 0;
+}
+
+.content p {
+  color: black;
+}
+
+.content-detail {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content-detail-img img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+.content-detail-info {
+  margin-left: 20px;
+}
+
+.content-detail-info span {
+  font-size: 22px;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.2);
+}
+
+.content-detail-info h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    margin: 50px 100px;
+  }
+  #overlay {
+    display: none;
+  }
+  .burger,
+  #menu-close {
+    display: none;
+  }
+  #menu-toggle {
+    position: static;
+    display: flex;
+    width: auto;
+    height: 50px;
+  }
+  .menu {
+    display: flex;
+    gap: 50px;
+  }
+  .menu li {
+  }
+  .menu li a {
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 0%, 0.673);
+  }
+  a:visited {
+    color: black;
+  }
+
+  .menu li a:hover {
+    color: orange;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px, 200px;
+    gap: 20px;
+  }
+
+  .one {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .two {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .three {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .four {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  .div-home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .three button:hover {
+    background-color: black;
+  }
+
+  .four div {
+    margin: 40px 0px;
+  }
+
+  .four h4:hover {
+    color: hsl(35, 77%, 62%);
+  }
+
+  .four p {
+    color: hsla(36, 100%, 99%, 0.6);
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .content h5:hover {
+    color: hsl(5, 85%, 63%);
+  }
+}
