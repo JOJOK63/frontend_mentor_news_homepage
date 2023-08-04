@@ -10,10 +10,6 @@ body {
   font-size: 15px;
 }
 
-body{
-    overflow-y: hidden;
-}
-
 nav {
   display: flex;
   flex-direction: row;
@@ -171,6 +167,7 @@ aside .ligne {
 @media screen and (min-width: 800px) {
   body {
     margin: 50px 100px;
+    overflow-y: hidden;
   }
   #overlay {
     display: none;
