@@ -167,7 +167,6 @@ aside .ligne {
 @media screen and (min-width: 800px) {
   body {
     margin: 50px 100px;
-    overflow-y: hidden;
   }
   #overlay {
     display: none;
@@ -201,6 +200,8 @@ aside .ligne {
   }
 
   main {
+    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 200px, 200px;
